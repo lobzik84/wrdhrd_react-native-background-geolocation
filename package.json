@@ -1,6 +1,6 @@
 {
   "name": "@emoreno-94/react-native-background-geolocation",
-  "version": "0.7.0",
+  "version": "0.7.1",
   "description": "Optimized background location tracking",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -35,6 +35,10 @@
     {
       "email": "hariks@zoho.com",
       "name": "Hariks"
+    },
+    {
+      "email": "edward.moreno@ing.uchile.cl",
+      "name": "Edward Moreno"
     }
   ],
   "license": "Apache-2.0",
@@ -43,7 +47,6 @@
   },
   "homepage": "https://github.com/emoreno-94/react-native-background-geolocation#readme",
   "dependencies": {
-    "@emoreno-94/react-native-background-geolocation": "^0.6.9",
     "plist": "^3.0.1"
   },
   "peerDependencies": {
