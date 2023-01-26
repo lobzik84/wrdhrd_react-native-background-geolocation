@@ -1,3 +1,3 @@
 include ':lib'
-include ':@emoreno_react-native-background-geolocation-common'
-project(':@emoreno_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, './common')
+include ':@drewaker_react-native-background-geolocation-common'
+project(':@drewaker_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, './common')
