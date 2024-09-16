@@ -1,9 +1,9 @@
-package com.wrdhrd.bgloc.react.headless;
+package com.marianhello.bgloc.react.headless;
 
 import android.content.Intent;
 
-import com.wrdhrd.bgloc.headless.Task;
-import com.wrdhrd.bgloc.headless.AbstractTaskRunner;
+import com.marianhello.bgloc.headless.Task;
+import com.marianhello.bgloc.headless.AbstractTaskRunner;
 
 public class HeadlessTaskRunner extends AbstractTaskRunner {
     @Override

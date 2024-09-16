@@ -1,10 +1,10 @@
-package com.wrdhrd.bgloc.react;
+package com.marianhello.bgloc.react;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.JavaOnlyArray;
 import com.facebook.react.bridge.JavaOnlyMap;
 import com.facebook.react.bridge.ReadableMap;
-import com.wrdhrd.bgloc.Config;
+import com.marianhello.bgloc.Config;
 
 import junit.framework.Assert;
 
