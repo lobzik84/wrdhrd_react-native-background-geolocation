@@ -1,9 +1,9 @@
-package com.wrdhrd.bgloc.react.data;
+package com.marianhello.bgloc.react.data;
 
 import com.facebook.react.bridge.Arguments;
 import com.facebook.react.bridge.WritableMap;
-import com.wrdhrd.bgloc.data.BackgroundLocation;
-import com.wrdhrd.utils.Convert;
+import com.marianhello.bgloc.data.BackgroundLocation;
+import com.marianhello.utils.Convert;
 
 /**
  * Created by finch on 29.11.2016.
