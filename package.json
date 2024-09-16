@@ -1,6 +1,6 @@
 {
   "name": "@wrdhrd/react-native-background-geolocation",
-  "version": "0.7.9",
+  "version": "0.0.1",
   "description": "Optimized background location tracking",
   "main": "./index.js",
   "types": "./index.d.ts",
@@ -28,9 +28,8 @@
   ],
   "author": "Marian Hello",
   "maintainers": [
-    "Darron Park <darron1217@gmail.com>",
-    "Hariks <hariks@zoho.com>",
-    "Edward Moreno <edward.moreno@ing.uchile.cl>"
+    "Suman Saurabh",
+    "Viplove Choudhary"
   ],
   "license": "Apache-2.0",
   "bugs": {
