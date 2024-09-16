@@ -5,4 +5,4 @@
 [submodule "ios/common"]
 	path = ios/common
 	url = https://github.com/WrdHrd-Technologies/background-geolocation-ios.git
-	branch = develop
+	branch = master
