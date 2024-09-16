@@ -4,4 +4,4 @@
 [submodule "android-common"]
 	path = android/common
 	url = https://github.com/WrdHrd-Technologies/background-geolocation-android.git
-	branch = fix/post-size
+	branch = develop
