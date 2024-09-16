@@ -1,4 +1,4 @@
-package com.marianhello.bgloc.react;
+package com.wrdhrd.bgloc.react;
 
 import android.content.Context;
 
@@ -12,16 +12,16 @@ import com.facebook.react.bridge.ReadableMap;
 import com.facebook.react.bridge.WritableArray;
 import com.facebook.react.bridge.WritableMap;
 import com.facebook.react.modules.core.DeviceEventManagerModule;
-import com.marianhello.bgloc.BackgroundGeolocationFacade;
-import com.marianhello.bgloc.Config;
-import com.marianhello.bgloc.PluginDelegate;
-import com.marianhello.bgloc.PluginException;
-import com.marianhello.bgloc.data.BackgroundActivity;
-import com.marianhello.bgloc.data.BackgroundLocation;
-import com.marianhello.bgloc.react.data.LocationMapper;
-import com.marianhello.bgloc.react.headless.HeadlessTaskRunner;
-import com.marianhello.logging.LogEntry;
-import com.marianhello.logging.LoggerManager;
+import com.wrdhrd.bgloc.BackgroundGeolocationFacade;
+import com.wrdhrd.bgloc.Config;
+import com.wrdhrd.bgloc.PluginDelegate;
+import com.wrdhrd.bgloc.PluginException;
+import com.wrdhrd.bgloc.data.BackgroundActivity;
+import com.wrdhrd.bgloc.data.BackgroundLocation;
+import com.wrdhrd.bgloc.react.data.LocationMapper;
+import com.wrdhrd.bgloc.react.headless.HeadlessTaskRunner;
+import com.wrdhrd.logging.LogEntry;
+import com.wrdhrd.logging.LoggerManager;
 
 import org.json.JSONException;
 

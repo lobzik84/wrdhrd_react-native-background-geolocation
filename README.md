@@ -52,7 +52,7 @@ dependencies {
 Register the module (in `MainApplication.java`)
 
 ```java
-import com.marianhello.bgloc.react.BackgroundGeolocationPackage;  // <--- Import Package
+import com.wrdhrd.bgloc.react.BackgroundGeolocationPackage;  // <--- Import Package
 
 public class MainApplication extends Application implements ReactApplication {
   ...
