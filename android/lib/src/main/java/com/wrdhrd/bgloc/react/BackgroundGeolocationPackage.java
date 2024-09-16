@@ -1,4 +1,4 @@
-package com.marianhello.bgloc.react;
+package com.wrdhrd.bgloc.react;
 
 import java.util.ArrayList;
 import java.util.Collections;

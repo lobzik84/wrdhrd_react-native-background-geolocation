@@ -2,7 +2,7 @@
 
 # Unit
 
-Notice: currently not possible - [read explanation](lib/src/test/java/com/marianhello/bgloc/react/ConfigMapperTest.java)
+Notice: currently not possible - [read explanation](lib/src/test/java/com/wrdhrd/bgloc/react/ConfigMapperTest.java)
 
 ```
 ndkDir=$(pwd)/react-ndk/all/x86_64 \
