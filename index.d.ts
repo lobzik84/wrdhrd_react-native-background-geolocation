@@ -266,7 +266,7 @@ export interface ConfigureOptions {
    *
    * @default 100
    */
-  syncThreshold?: string;
+  syncThreshold?: number;
 
   /**
    * Optional HTTP headers sent along in HTTP request.
