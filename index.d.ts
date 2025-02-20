@@ -136,6 +136,17 @@ export interface ConfigureOptions {
   activitiesInterval?: number;
 
   /**
+   * Rate in milliseconds at which location will be sent when enters in stationary mode
+   * Value must be Greater than 300000 milliseconds
+   *
+   * Platform: Android
+   * Provider: DISTANCE_FILTER
+   *
+   * @default 0
+   */
+  stationaryInterval?: number;
+
+  /**
    * @deprecated Stop location updates, when the STILL activity is detected.
    */
   stopOnStillActivity?: boolean;
