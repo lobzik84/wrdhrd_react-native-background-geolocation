@@ -896,7 +896,8 @@ export interface BackgroundGeolocationPlugin {
     eventName: 'http_authorization',
     callback: () => void
   ): void;
-
+  
+  startAutostartSettings() : void;
 }
 
 declare const BackgroundGeolocation: BackgroundGeolocationPlugin;

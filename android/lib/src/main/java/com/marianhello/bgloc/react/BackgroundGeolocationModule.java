@@ -20,6 +20,7 @@ import com.marianhello.bgloc.data.BackgroundActivity;
 import com.marianhello.bgloc.data.BackgroundLocation;
 import com.marianhello.bgloc.react.data.LocationMapper;
 import com.marianhello.bgloc.react.headless.HeadlessTaskRunner;
+import com.marianhello.bgloc.utils.AutoStartHelper;
 import com.marianhello.logging.LogEntry;
 import com.marianhello.logging.LoggerManager;
 
@@ -44,6 +45,8 @@ public class BackgroundGeolocationModule extends ReactContextBaseJavaModule impl
     public static final String ERROR_EVENT = "error";
 
     private static final int PERMISSIONS_REQUEST_CODE = 1;
+
+    private final ReactApplicationContext reactContext;
 
     private BackgroundGeolocationFacade facade;
     private org.slf4j.Logger logger;
@@ -85,6 +88,7 @@ public class BackgroundGeolocationModule extends ReactContextBaseJavaModule impl
     public BackgroundGeolocationModule(ReactApplicationContext reactContext) {
         super(reactContext);
         reactContext.addLifecycleEventListener(this);
+        this.reactContext = reactContext;
 
         facade = new BackgroundGeolocationFacade(getContext(), this);
         logger = LoggerManager.getLogger(BackgroundGeolocationModule.class);
@@ -321,6 +325,15 @@ public class BackgroundGeolocationModule extends ReactContextBaseJavaModule impl
         facade.forceSync();
         success.invoke();
     }
+
+    //Auto Start
+    @ReactMethod
+    public void startAutostartSettings() {
+        AutoStartHelper autoStartHelper = new AutoStartHelper();
+
+        autoStartHelper.getAutoStartPermission(reactContext.getCurrentActivity());
+    }
+    // End Of Auto Start
 
     private void sendEvent(String eventName, Object params) {
         getReactApplicationContext()

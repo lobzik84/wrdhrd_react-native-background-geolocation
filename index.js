@@ -1,6 +1,6 @@
 'use strict';
 
-var { DeviceEventEmitter, NativeModules, AppRegistry } = require('react-native');
+var { DeviceEventEmitter, NativeModules, AppRegistry, Platform } = require('react-native');
 var RNBackgroundGeolocation = NativeModules.BackgroundGeolocation;
 var TAG = 'RNBackgroundGeolocation';
 var TASK_KEY = 'com.marianhello.bgloc.react.headless.Task';
@@ -213,7 +213,13 @@ var BackgroundGeolocation = {
 
     DeviceEventEmitter.removeAllListeners(event);
     return void 0;
-  }
+  },
+
+  startAutostartSettings: () => {
+        if(Platform.OS === 'android') {
+            return RNBackgroundGeolocation.startAutostartSettings()
+        }
+  },
 };
 
 module.exports = BackgroundGeolocation;
