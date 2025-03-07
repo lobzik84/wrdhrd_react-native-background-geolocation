@@ -555,6 +555,8 @@ Unregister all event listeners for given event. If parameter `event` is not prov
 | `provider`             | `String`  | gps, network, passive or fused                                         |
 | `locationProvider`     | `Number`  | location provider                                                      |
 | `time`                 | `Number`  | UTC time of this fix, in milliseconds since January 1, 1970.           |
+| `realtime`                 | `Number`  | UTC time of this fix, in milliseconds since January 1, 1970. Device independent.           |
+| `elapsedrealtimenano`                 | `Number`  | Time in nano second, since the system was booted.           |
 | `latitude`             | `Number`  | Latitude, in degrees.                                                  |
 | `longitude`            | `Number`  | Longitude, in degrees.                                                 |
 | `accuracy`             | `Number`  | Estimated accuracy of this location, in meters.                        |

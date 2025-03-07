@@ -338,8 +338,14 @@ export interface Location {
   /** Configured location provider. */
   locationProvider: number;
 
-  /** UTC time of this fix, in milliseconds since January 1, 1970. */
+  /** UTC time of this fix, in milliseconds since January 1, 1970. This is device time dependent if location is not coming from GPS. */
   time: number;
+
+  /** UTC time of this fix, in milliseconds since January 1, 1970. */
+  realtime: number;
+
+    /** Time in nano second, since the system was booted */
+  elapsedrealtimenano: number;
 
   /** Latitude, in degrees. */
   latitude: number;

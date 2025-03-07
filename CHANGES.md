@@ -1,4 +1,9 @@
 ## Changelog
+### [3.0.0] - 2025-03-07
+- Device independent time with location
+- Time elapsed since system booted
+- Battery information with template
+
 ### [0.7.0] - 2022-05-23
 - Android 12 PendingIntent crash fixes for targetSDK 12
 

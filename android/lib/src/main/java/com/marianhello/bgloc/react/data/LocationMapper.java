@@ -16,6 +16,8 @@ public class LocationMapper {
         Integer locationProvider = location.getLocationProvider();
         if (locationProvider != null) out.putInt("locationProvider", locationProvider);
         out.putDouble("time", new Long(location.getTime()).doubleValue());
+        out.putDouble("realtime", new Long(location.getRealTime()).doubleValue());
+        out.putDouble("elapsedrealtimenano", new Long(location.getElapsedRealtimeNanos()).doubleValue());
         out.putDouble("latitude", location.getLatitude());
         out.putDouble("longitude", location.getLongitude());
         if (location.hasAccuracy()) out.putDouble("accuracy", location.getAccuracy());
