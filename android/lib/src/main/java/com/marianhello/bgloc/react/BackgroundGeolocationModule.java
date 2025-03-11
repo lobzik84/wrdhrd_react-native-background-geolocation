@@ -23,6 +23,7 @@ import com.marianhello.bgloc.react.headless.HeadlessTaskRunner;
 import com.marianhello.bgloc.utils.AutoStartHelper;
 import com.marianhello.logging.LogEntry;
 import com.marianhello.logging.LoggerManager;
+import com.marianhello.utils.RealTimeHelper;
 
 import org.json.JSONException;
 
@@ -154,6 +155,15 @@ public class BackgroundGeolocationModule extends ReactContextBaseJavaModule impl
 
     @ReactMethod
     public void configure(final ReadableMap options, final Callback success, final Callback error) {
+        if(reactContext.getCurrentActivity() != null) {
+            reactContext.getCurrentActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    RealTimeHelper.initialize(getContext());
+                }
+            });
+        }
+
         runOnBackgroundThread(new Runnable() {
             @Override
             public void run() {
