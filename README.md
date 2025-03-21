@@ -50,6 +50,7 @@ android{
 Register the module (in `MainApplication.kt`)
 
 ```kotlin
+  import com.marianhello.bgloc.react.BackgroundGeolocationPackage;  
   ...
  override fun getPackages(): List<ReactPackage> =
     PackageList(this).packages.apply {
