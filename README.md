@@ -1,7 +1,5 @@
 # @wrdhrd/react-native-background-geolocation
 
-[![npm](https://img.shields.io/npm/v/@wrdhrd/react-native-background-geolocation?style=flat-square)](https://www.npmjs.com/package/@wrdhrd/react-native-background-geolocation)
-
 > Forked from [WrdHrd-Technologies/react-native-background-geolocation](https://github.com/WrdHrd-Technologies/react-native-background-geolocation), and this forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
 Original Repo: [@mauron85/react-native-background-geolocation](https://github.com/mauron85/react-native-background-geolocation)
 
