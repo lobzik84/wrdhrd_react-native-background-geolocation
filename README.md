@@ -26,7 +26,7 @@ node ./node_modules/@wrdhrd/react-native-background-geolocation/scripts/postlink
 
 ### Manual setup
 
-#### Android setup
+#### Android setup - 2025 RN 0.76
 
 In `android/settings.gradle`
 
@@ -42,34 +42,64 @@ project(':@wrdhrd_react-native-background-geolocation').projectDir = new File(ro
 In `android/app/build.gradle`
 
 ```gradle
-dependencies {
+android{
     ...
-    compile project(':@wrdhrd_react-native-background-geolocation')
+    defaultConfig {
+        ...
+        resValue "string", "mauron85_bgloc_account_type", "${applicationId}.mauron85.account"
+    }
     ...
 }
 ```
 
-Register the module (in `MainApplication.java`)
+Register the module (in `MainApplication.kt`)
 
-```java
-import com.marianhello.bgloc.react.BackgroundGeolocationPackage;  // <--- Import Package
-
-public class MainApplication extends Application implements ReactApplication {
+```kotlin
   ...
-  /**
-   * A list of packages used by the app. If the app uses additional views
-   * or modules besides the default ones, add more packages here.
-   */
-  @Override
-  protected List<ReactPackage> getPackages() {
-      return Arrays.<ReactPackage>asList(
-          new MainReactPackage(),
-          new BackgroundGeolocationPackage() // <---- Add the Package
-      );
-  }
-  ...
-}
+ override fun getPackages(): List<ReactPackage> =
+    PackageList(this).packages.apply {
+      // Packages that cannot be autolinked yet can be added manually here, for example:
+      // add(MyReactNativePackage())
+      add(BackgroundGeolocationPackage())
+    }
 ```
+
+In `android/app/src/main/res/values/strings.xml`
+Note: replace yourAplicationId by the same value in android/app/build.gradle
+
+```
+<resources>
+    ...
+    <string name="mauron85_bgloc_content_authority">yourAplicationId.mauron85.bgloc.account</string>
+</resources>
+
+```
+
+In `android/app/src/main/AndroidManifest.xml`
+Note: inside <application></aplication>
+Note 2: replace yourAplicationId by the same value in android/app/build.gradle
+
+```
+ <service
+    android:name="yourAplicationId.mauron85.bgloc.account"
+    android:exported="true">
+    <intent-filter>
+        <action android:name="android.accounts.AccountAuthenticator"/>
+    </intent-filter>
+    <meta-data
+        android:name="android.accounts.AccountAuthenticator"
+        android:resource="@xml/authenticator"/>
+  </service>
+```
+
+Note: outside <application>
+```
+<uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"/>
+<uses-permission android:name="android.permission.FOREGROUND_SERVICE" />
+<application>
+    ...
+```
+
 
 #### iOS setup
 
