@@ -2,17 +2,14 @@
 
 [![npm](https://img.shields.io/npm/v/@wrdhrd/react-native-background-geolocation?style=flat-square)](https://www.npmjs.com/package/@wrdhrd/react-native-background-geolocation)
 
-> Forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
+> Forked from [WrdHrd-Technologies/react-native-background-geolocation](https://github.com/WrdHrd-Technologies/react-native-background-geolocation), and this forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
 Original Repo: [@mauron85/react-native-background-geolocation](https://github.com/mauron85/react-native-background-geolocation)
+
 
 ## Installation
 
 ```
-npm i @wrdhrd/react-native-background-geolocation
-```
-
-```
-yarn add @wrdhrd/react-native-background-geolocation
+npm i github:rafwell/wrdhrd_react-native-background-geolocation#3.0.4
 ```
 
 ### Automatic setup
