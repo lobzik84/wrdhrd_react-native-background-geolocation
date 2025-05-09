@@ -1,22 +1,13 @@
 # @wrdhrd/react-native-background-geolocation
 
-> Forked from [WrdHrd-Technologies/react-native-background-geolocation](https://github.com/WrdHrd-Technologies/react-native-background-geolocation), and this forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
+> Forked from [rafwell/wrdhrd_react-native-background-geolocation](https://github.com/rafwell/wrdhrd_react-native-background-geolocation), and this forked from [WrdHrd-Technologies/react-native-background-geolocation](https://github.com/WrdHrd-Technologies/react-native-background-geolocation), and this forked from [@drewaker/react-native-background-geolocation](https://github.com/flaviolima9904/react-native-background-geolocation), and this forked from [@emoreno/react-native-background-geolocation](https://github.com/emoreno-94/react-native-background-geolocation), and this forked from [@hariks789/react-native-background-geolocation](https://github.com/hariks789/react-native-background-geolocation) due to inactivity.
 Original Repo: [@mauron85/react-native-background-geolocation](https://github.com/mauron85/react-native-background-geolocation)
 
 
 ## Installation
 
 ```
-npm i github:rafwell/wrdhrd_react-native-background-geolocation#3.0.4
-```
-
-### Automatic setup
-
-Since version 0.60 React Native does linking of modules [automatically](https://github.com/react-native-community/cli/blob/master/docs/autolinking.md). However it does it only for single module.
-As plugin depends on additional 'common' module, it is required to link it with:
-
-```
-node ./node_modules/@wrdhrd/react-native-background-geolocation/scripts/postlink.js
+npm i github:lobzik84/wrdhrd_react-native-background-geolocation#3.0.4
 ```
 
 ### Manual setup
@@ -27,10 +18,10 @@ In `android/settings.gradle`
 
 ```gradle
 ...
-include ':@wrdhrd_react-native-background-geolocation-common'
-project(':@wrdhrd_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, '../node_modules/@wrdhrd/react-native-background-geolocation/android/common')
-include ':@wrdhrd_react-native-background-geolocation'
-project(':@wrdhrd_react-native-background-geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/@wrdhrd/react-native-background-geolocation/android/lib')
+include ':wrdhrd_react-native-background-geolocation-common'
+project(':wrdhrd_react-native-background-geolocation-common').projectDir = new File(rootProject.projectDir, '../node_modules/@wrdhrd/react-native-background-geolocation/android/common')
+include ':wrdhrd_react-native-background-geolocation'
+project(':wrdhrd_react-native-background-geolocation').projectDir = new File(rootProject.projectDir, '../node_modules/@wrdhrd/react-native-background-geolocation/android/lib')
 ...
 ```
 
